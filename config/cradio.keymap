@@ -84,7 +84,7 @@
     default_layer {
       bindings = <
         &kp W            &kp L            &kp Y            &kp P            &kp B                 &kp Z            &kp F            &kp O            &kp U            &kp SQT
-        &mt LSHIFT C     &mt LALT R       &mt LGUI S       &mt LCTRL T      &kp G                 &kp M            &mt RCTRL N      &mt RGUI E       &mt RALT I       &mt LSHIFT A
+        &mt LSHIFT C     &mt LALT R       &mt LGUI S       &mt LCTRL T      &kp G                 &kp M            &mt RCTRL N      &mt RGUI E       &mt RALT I       &mt RSHIFT A
         &kp Q            &kp J            &kp V            &mt LSHIFT D     &kp K                 &kp X            &kp H            &kp SEMI         &kp COMMA        &kp DOT
                                                            &hlt _NNM TAB    &lt _MED SPC          &hmt LSHIFT BSPC &none
       >;
@@ -93,7 +93,7 @@
     nnm_layer {
       bindings = <
         &kp GRAVE        &kp ESC          &kp UP           &kp ENTER        &kp DEL               &kp BSLH         &kp N7           &kp N8           &kp N9           &kp FSLH 
-        &kp TAB          &mt LALT LEFT    &mt LGUI DOWN    &mt LCTRL RIGHT  &kp LBKT              &kp EQUAL        &mt RCTRL N4     &mt RGUI N5      &mt RALT N6      &mt LSHIFT N0
+        &mt LSHIFT BSPC  &mt LALT LEFT    &mt LGUI DOWN    &mt LCTRL RIGHT  &kp LBKT              &kp EQUAL        &mt RCTRL N4     &mt RGUI N5      &mt RALT N6      &mt RSHIFT N0
         &kp HOME         &kp PG_UP        &kp PG_DN        &mt LSHIFT END   &kp RBKT              &kp MINUS        &kp N1           &kp N2           &kp N3           &kp DOT 
                                                            &trans           &trans                &trans           &trans
       >;
@@ -101,10 +101,10 @@
 
     media_layer {
       bindings = <
-        &kp LG(Z)        &kp LG(X)        &kp LG(C)        &kp LG(V)        &kp C_VOL_UP          &none            &kp F7           &kp F8           &kp F9           &kp F11
-        &kp PSCRN        &mt LALT C_PREV  &mt LGUI C_PP    &mt LCTRL C_NEXT &kp C_VOL_DN          &none            &mt RCTRL F4     &mt RGUI F5      &mt RALT F6      &mt LSHIFT F10
-        &kp LC(Z)        &kp LC(X)        &kp LC(C)        &kp LC(V)        &kp PSCRN             &none            &kp F1           &kp F2           &kp F3           &kp F12
-                                                           &trans           &trans                &trans           &trans
+        &kp LG(Z)        &kp LG(X)        &kp LG(C)        &kp LG(V)        &kp PSCRN            &none            &kp F7           &kp F8           &kp F9           &kp F11
+        &kp LC(Z)        &kp LC(X)        &kp LC(C)        &kp LC(V)        &kp C_VOL_DN         &none            &mt RCTRL F4     &mt RGUI F5      &mt RALT F6      &mt LSHIFT F10
+        &kp C_MUTE       &mt LALT C_PREV  &mt LGUI C_PP    &mt LCTRL C_NEXT &kp C_VOL_UP         &none            &kp F1           &kp F2           &kp F3           &kp F12
+                                                           &trans           &trans               &trans           &trans
       >;
     };
 
