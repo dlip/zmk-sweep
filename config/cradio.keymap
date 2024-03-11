@@ -94,9 +94,15 @@
       bindings = <&kp Q>;
       layers = <0>;
     };
+    combo_qmark {
+      timeout-ms = <100>;
+      key-positions = <20 23>;
+      bindings = <&kp QMARK>;
+      layers = <0>;
+    };
     combo_quot {
       timeout-ms = <100>;
-      key-positions = <20 21>;
+      key-positions = <21 23>;
       bindings = <&kp QUOT>;
       layers = <0>;
     };
