@@ -12,11 +12,10 @@
 // LAYERS
 #define _BSE 0
 #define _NNM 1
-#define _NFN 2
-#define _MED 3
-#define _SYS 4
-#define _GM1 5
-#define _GM2 6
+#define _MED 2
+#define _SYS 3
+#define _GM1 4
+#define _GM2 5
 
 &mt {
   flavor = "tap-preferred";
@@ -94,15 +93,21 @@
       bindings = <&kp Q>;
       layers = <0>;
     };
-    combo_comma {
+    combo_quot {
       timeout-ms = <100>;
       key-positions = <20 21>;
+      bindings = <&kp QUOT>;
+      layers = <0>;
+    };
+    combo_comma {
+      timeout-ms = <100>;
+      key-positions = <21 22>;
       bindings = <&kp COMMA>;
       layers = <0>;
     };
     combo_dot {
       timeout-ms = <100>;
-      key-positions = <21 22>;
+      key-positions = <22 23>;
       bindings = <&kp DOT>;
       layers = <0>;
     };
@@ -117,32 +122,24 @@
         &kp B            &kp Y            &kp O            &kp U            &none                 &none            &kp L            &kp D            &kp W            &kp V
         &mt LSHIFT C     &mt LALT I       &mt LGUI E       &mt LCTRL A      &none                 &none            &mt RCTRL H      &mt RGUI T       &mt RALT S       &mt RSHIFT N
         &kp G            &kp X            &kp J            &kp K            &none                 &none            &kp R            &kp M            &kp F            &kp P
-                                                           &hlt _NNM TAB    &lt _NFN SPC          &hmt LSHIFT BSPC &none
+                                                           &hlt _NNM TAB    &lt _MED SPC          &hmt LSHIFT BSPC &none
       >;
     };
 
     nnm_layer {
       bindings = <
-        &kp GRAVE        &kp DEL          &kp QUOT         &kp ENTER        &none                 &none            &kp N7           &kp N8           &kp N9           &kp BSLH
-        &mt LSHIFT ESC   &mt LALT SEMI    &mt LGUI COMMA   &mt LCTRL DOT    &none                 &none            &mt RCTRL N4     &mt RGUI N5      &mt RALT N6      &mt RSHIFT N0
+        &kp GRAVE        &kp ESC          &kp UP           &kp ENTER        &none                 &none            &kp N7           &kp N8           &kp N9           &kp BSLH
+        &mt LSHIFT DEL   &mt LALT LEFT    &mt LGUI DOWN    &mt LCTRL RIGHT  &none                 &none            &mt RCTRL N4     &mt RGUI N5      &mt RALT N6      &mt RSHIFT N0
         &kp LBKT         &kp RBKT         &kp MINUS        &kp EQUAL        &none                 &none            &kp N1           &kp N2           &kp N3           &kp FSLH
-                                                           &trans           &trans                &trans           &trans
-      >;
-    };
-    nfn_layer {
-      bindings = <
-        &kp PG_UP        &kp HOME         &kp UP           &kp END          &none                 &none            &kp F7           &kp F8           &kp F9           &kp F11
-        &mt LSHIFT PG_DN &mt LALT LEFT    &mt LGUI DOWN    &mt LCTRL RIGHT  &none                 &none            &mt RCTRL F4     &mt RGUI F5      &mt RALT F6      &mt LSHIFT F10
-        &kp LC(Z)        &kp LC(X)        &kp LC(C)        &kp LC(V)        &none                 &none            &kp F1           &kp F2           &kp F3           &kp F12
                                                            &trans           &trans                &trans           &trans
       >;
     };
     media_layer {
       bindings = <
-        &none            &none            &kp C_VOL_DN     &kp C_VOL_UP     &none                &none            &kp F7           &kp F8           &kp F9           &kp F11
-        &kp PSCRN        &mt LALT C_PREV  &mt LGUI C_PP    &mt LCTRL C_NEXT &none                &none            &mt RCTRL F4     &mt RGUI F5      &mt RALT F6      &mt LSHIFT F10
-        &none            &none            &none            &none            &none                &none            &kp F1           &kp F2           &kp F3           &kp F12
-                                                           &trans           &trans               &trans           &trans
+        &kp PSCRN        &mt LALT C_PREV  &mt LGUI C_PP    &mt LCTRL C_NEXT &none                 &none            &kp F7           &kp F8           &kp F9           &kp F11
+        &kp LC(Z)        &kp LC(X)        &kp LC(C)        &kp LC(V)        &none                 &none            &mt RCTRL F4     &mt RGUI F5      &mt RALT F6      &mt LSHIFT F10
+        &none            &none            &kp C_VOL_DN     &kp C_VOL_UP     &none                 &none            &kp F1           &kp F2           &kp F3           &kp F12
+                                                           &trans           &trans                &trans           &trans
       >;
     };
 
